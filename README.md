@@ -6,11 +6,13 @@ This self-contained, reproducible Jupyter notebook includes the code and descrip
 Please note, that this notebook heavily relies on the sample [Jupyter notebook](https://github.com/google-research/text-to-text-transfer-transformer/blob/main/notebooks/t5-trivia.ipynb) provided by T5 authors along with several insights and ideas from the [notebook](https://github.com/mayhewsw/multilingual-t5/blob/master/notebooks/mt5-xnli.ipynb) by Stephen Mayhew.
 
 ## Modes of running
-I see three modes of using this work. Please note that all three modes are heavily relying on Google Colaboratory, I have not tested it with local runtime.
+I see two modes of using this work. Please note that all modes are heavily relying on Google Colaboratory means.
 
-- Following the whole notebook, loading my fine-tuned model from Google Storage and checking it on inference. Optionally, check the correctness of the reported metrics by uncommenting corresponding cells.
-- Fine-tuning model by yourself using the Colab runtime to reproduce and verify the whole process. Please note, that the newly created model will be lost after the runtime utilization. For this mode please change LOCAL_RUNTIME_MODEL to True.
-- Setting up your personal Google Storage folder and fully replicating my original work.
+- Following the whole notebook, loading the model from Google Storage, which was finetuned by me, and checking it on inference.
+Optionally, checking the validity of the result metrics.
+- Setting up your personal Google Storage folder and changing BASE_CLOUD_DIR respectively.
+
+Additionally, I have tried to use local Colab runtime to save the model-related files, but it is not allowed due to [TPU-specifics](https://cloud.google.com/tpu/docs/troubleshooting#cannot_use_local_filesystem).
 
 ## Before you start
 - It is advised to use Google Chrome if you want to explore Tensorboard interactively during fine-tuning. Also, it looks like that this specific browser works very fast with Colab.
