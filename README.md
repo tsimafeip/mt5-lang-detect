@@ -15,6 +15,6 @@ Optionally, checking the validity of the result metrics.
 Additionally, I have tried to use local Colab runtime to save the model-related files, but it is not allowed due to [TPU-specifics](https://cloud.google.com/tpu/docs/troubleshooting#cannot_use_local_filesystem).
 
 ## Before you start
-- It is advised to use Google Chrome if you want to explore Tensorboard interactively during fine-tuning. Also, it looks like that this specific browser works very fast with Colab.
+- It is advised to use Google Chrome if you want to explore Tensorboard interactively during fine-tuning. Also, it looks like this specific browser works very fast with Colab.
 - Please log in to any Google Account when the notebook requests it. It is needed for the work with Google Storage, which assists as a data directory for faster loading.
 - Google Colab is sometimes failing to provide enough TPUs. I can do nothing with it since the T5 model is based on TPU architecture. The only advice is to try again later.
