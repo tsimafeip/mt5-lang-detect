@@ -8,7 +8,7 @@ Please note, that this notebook uses code from the sample [Jupyter notebook](htt
 ## Modes of running
 I see two modes of using this work. All modes are heavily relying on Google Colaboratory means.
 
-- Following the whole notebook, loading the model from Google Storage, which was finetuned by me, and checking it on inference.
+- Following the whole notebook, loading the model from Google Storage, which was finetuned by me, and checking it at inference.
 Optionally, checking the validity of the result metrics.
 - Setting up your personal Google Storage folder and changing BASE_CLOUD_DIR respectively.
 
